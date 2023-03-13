@@ -25,6 +25,19 @@ struct WelcomeView: View {
                     .font(.callout)
                     .fontWeight(.medium)
                     .foregroundColor(Color(hue: 1.0, saturation: 0.013, brightness: 0.947))
+                Button {
+                    print("Button Tapped")
+                } label: {
+                    Text("START")
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                        .padding(.all, 13.0)
+                        .frame(height: 50.0)
+                        .background(.white)
+                        .foregroundColor(.red)
+                        
+                    
+                }
                 
             }
         }
