@@ -11,6 +11,7 @@
 		2E8137B729BF1DE100B7CB41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8137B629BF1DE100B7CB41 /* ContentView.swift */; };
 		2E8137B929BF1DE200B7CB41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8137B829BF1DE200B7CB41 /* Assets.xcassets */; };
 		2E8137BC29BF1DE200B7CB41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8137BB29BF1DE200B7CB41 /* Preview Assets.xcassets */; };
+		2E8137C329BF1E1900B7CB41 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8137C229BF1E1900B7CB41 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2E8137B629BF1DE100B7CB41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E8137B829BF1DE200B7CB41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8137BB29BF1DE200B7CB41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E8137C229BF1E1900B7CB41 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2E8137B429BF1DE100B7CB41 /* KreasBeyondMeatApp.swift */,
 				2E8137B629BF1DE100B7CB41 /* ContentView.swift */,
+				2E8137C229BF1E1900B7CB41 /* WelcomeView.swift */,
 				2E8137B829BF1DE200B7CB41 /* Assets.xcassets */,
 				2E8137BA29BF1DE200B7CB41 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8137B729BF1DE100B7CB41 /* ContentView.swift in Sources */,
+				2E8137C329BF1E1900B7CB41 /* WelcomeView.swift in Sources */,
 				2E8137B529BF1DE100B7CB41 /* KreasBeyondMeatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
