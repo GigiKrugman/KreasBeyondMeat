@@ -11,18 +11,29 @@ struct HomeView: View {
     var body: some View {
         VStack {
             TabView {
-                Text("Products")
+                Text("Home")
                     .tabItem {
-                        Label("Products" , systemImage: "sparkles")
+                        Label("Home" , systemImage: "house")
                             .tag(0)
                     }
-                Text("About")
+                Text("Chart")
                     .tabItem {
-                        Label("About", systemImage: "sparkles")
+                        Label("Chart", systemImage: "bag")
                     }
                     .tag(1)
+                Text("Favorites")
+                    .tabItem {
+                        Label("Favorites", systemImage: "heart")
+                    }
+                    .tag(2)
+                Text("Settings")
+                    .tabItem {
+                        Label("Settings", systemImage: "gear")
+                    }
+                    .tag(3)
                 
             }
+            
         }
     }
 }
