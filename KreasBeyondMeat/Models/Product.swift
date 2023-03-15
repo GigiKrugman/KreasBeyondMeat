@@ -7,16 +7,12 @@
 
 import Foundation
 
-struct Product {
+struct Product: Identifiable {
+   var id = UUID()
     var name: String
     var description: String
     var image: String
     var price: Int
     
-    init(name: String, description: String, image: String, price: Int) {
-        self.name = name
-        self.description = description
-        self.image = image
-        self.price = price
-    }
+    
 }

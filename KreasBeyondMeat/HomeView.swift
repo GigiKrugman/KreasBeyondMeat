@@ -8,31 +8,37 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var selectedTabIndex = 0
     var body: some View {
         VStack {
-            TabView {
-                Text("Home")
-                    .tabItem {
-                        Label("Home" , systemImage: "house")
-                            .tag(0)
-                    }
-                Text("Chart")
-                    .tabItem {
-                        Label("Chart", systemImage: "bag")
-                    }
-                    .tag(1)
-                Text("Favorites")
-                    .tabItem {
-                        Label("Favorites", systemImage: "heart")
-                    }
-                    .tag(2)
-                Text("Settings")
-                    .tabItem {
-                        Label("Settings", systemImage: "gear")
-                    }
-                    .tag(3)
-                
-            }
+            
+                TabView (selection: $selectedTabIndex){
+                    
+                    ProductsView()
+                        .tabItem {
+                            
+                            Label("Home" , systemImage: "house")
+                                .tag(0)
+                        }
+                    Text("Chart")
+                        .tabItem {
+                            Label("Chart", systemImage: "bag")
+                        }
+                        .tag(1)
+                    Text("Favorites")
+                        .tabItem {
+                            Label("Favorites", systemImage: "heart")
+                        }
+                        .tag(2)
+                    Text("Settings")
+                        .tabItem {
+                            Label("Settings", systemImage: "gear")
+                        }
+                        .tag(3)
+                    
+                }
+            
+            
             
         }
     }
