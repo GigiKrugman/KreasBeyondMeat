@@ -14,6 +14,8 @@
 		2E8137C329BF1E1900B7CB41 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8137C229BF1E1900B7CB41 /* WelcomeView.swift */; };
 		2E8137C529BF84ED00B7CB41 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8137C429BF84ED00B7CB41 /* Product.swift */; };
 		2E8137C829C0B21F00B7CB41 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8137C729C0B21F00B7CB41 /* ProductsView.swift */; };
+		2E8CD3E529C3A8C200C56642 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8CD3E429C3A8C200C56642 /* ProductDetailView.swift */; };
+		2EDC57F029E2BB5C00377902 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC57EF29E2BB5C00377902 /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		2E8137C229BF1E1900B7CB41 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		2E8137C429BF84ED00B7CB41 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2E8137C729C0B21F00B7CB41 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		2E8CD3E429C3A8C200C56642 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		2EDC57EF29E2BB5C00377902 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			children = (
 				2E8137B429BF1DE100B7CB41 /* KreasBeyondMeatApp.swift */,
 				2E8137C729C0B21F00B7CB41 /* ProductsView.swift */,
+				2E8CD3E429C3A8C200C56642 /* ProductDetailView.swift */,
 				2E8137B629BF1DE100B7CB41 /* HomeView.swift */,
 				2E8137C629BF858200B7CB41 /* Models */,
 				2E8137C229BF1E1900B7CB41 /* WelcomeView.swift */,
@@ -80,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8137C429BF84ED00B7CB41 /* Product.swift */,
+				2EDC57EF29E2BB5C00377902 /* SampleData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,10 +161,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8137B729BF1DE100B7CB41 /* HomeView.swift in Sources */,
+				2EDC57F029E2BB5C00377902 /* SampleData.swift in Sources */,
 				2E8137C529BF84ED00B7CB41 /* Product.swift in Sources */,
 				2E8137C329BF1E1900B7CB41 /* WelcomeView.swift in Sources */,
 				2E8137B529BF1DE100B7CB41 /* KreasBeyondMeatApp.swift in Sources */,
 				2E8137C829C0B21F00B7CB41 /* ProductsView.swift in Sources */,
+				2E8CD3E529C3A8C200C56642 /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
