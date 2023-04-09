@@ -32,7 +32,7 @@ struct ProductImageRow: View {
                 //.frame(width: 80, height: 60)
                 .aspectRatio(contentMode: .fill)
                 .cornerRadius(10)
-            Text(product.description)
+            Text(product.name)
                 .fontWeight(.black)
                 .foregroundColor(.white)
         }

@@ -12,11 +12,17 @@ struct ProductDetailView: View {
     var body: some View {
         VStack {
             Text(product.name)
+                .font(.title)
+                .fontWeight(.black)
                 
-            Text(product.description)
+            
             Image(product.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+            
+            Text(product.description)
+                .font(.system(.title2, design: .monospaced))
+            Spacer()
         }
     }
 }
@@ -24,6 +30,6 @@ struct ProductDetailView: View {
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
         
-        ProductDetailView(product: SampleData.sampleProductDetailed[0])
+        ProductDetailView(product: SampleData.sampleProducts[0])
     }
 }
