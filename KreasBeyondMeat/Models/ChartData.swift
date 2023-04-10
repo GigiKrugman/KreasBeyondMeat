@@ -7,6 +7,7 @@
 
 import Combine
 
+
 class ChartData: ObservableObject {
     @Published var items : [Product : Int] = [:]
     
