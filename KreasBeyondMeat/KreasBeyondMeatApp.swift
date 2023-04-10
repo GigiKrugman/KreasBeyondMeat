@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct KreasBeyondMeatApp: App {
+    @StateObject private var chartData = ChartData()
+    
     var body: some Scene {
         WindowGroup {
             WelcomeView()
+                .environmentObject(chartData)
         }
     }
 }

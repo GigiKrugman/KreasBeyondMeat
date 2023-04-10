@@ -9,6 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var selectedTabIndex = 0
+    //Here i'm gonna add an @StateObject:
+    @StateObject private var chartData = ChartData()
+    
     var body: some View {
         VStack {
             
@@ -19,8 +22,10 @@ struct HomeView: View {
                             
                             Label("Home" , systemImage: "house")
                                 .tag(0)
+                                .environmentObject(chartData)
                         }
-                    Text("Chart")
+                    //Here i wanna be able to navigate to the ChartView in the Tab
+                    ChartView()
                         .tabItem {
                             Label("Chart", systemImage: "bag")
                         }
@@ -46,6 +51,6 @@ struct HomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView().environmentObject(ChartData())
     }
 }

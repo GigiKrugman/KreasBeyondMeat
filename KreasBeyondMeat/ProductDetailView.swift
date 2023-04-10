@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ProductDetailView: View {
-    @State var isFavorite: Bool = false
-    @State var number = 0
-    let product: Product
+    @EnvironmentObject var chartData: ChartData
+        var product: Product
+    @State private var isFavorite: Bool = false
+        @State private var number: Int = 0
     var body: some View {
         VStack {
             Text(product.name)
@@ -46,11 +47,11 @@ struct ProductDetailView: View {
                 Button(action: {isFavorite.toggle()}) {
                     Image(systemName: isFavorite ? "heart.fill" : "heart")
                         .font(.title)
-                                                .foregroundColor(isFavorite ? .red : .gray)
+                        .foregroundColor(isFavorite ? .red : .gray)
                 }
             }
-                                       HStack {
-                Button(action: {}) {
+                HStack {
+                    Button(action: {chartData.addItem(product: product, quantity: number)}) {
                     Text("Add to chart")
                         .font(.title)
                         .padding(.all)
@@ -67,5 +68,6 @@ struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
         
         ProductDetailView(product: SampleData.sampleProducts[0])
+                    .environmentObject(ChartData())
     }
 }
