@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E424E8D29E3E765007B1DD1 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E424E8C29E3E765007B1DD1 /* ChartView.swift */; };
+		2E424E8F29E406E6007B1DD1 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E424E8E29E406E6007B1DD1 /* FavoriteView.swift */; };
 		2E8137B529BF1DE100B7CB41 /* KreasBeyondMeatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8137B429BF1DE100B7CB41 /* KreasBeyondMeatApp.swift */; };
 		2E8137B729BF1DE100B7CB41 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8137B629BF1DE100B7CB41 /* HomeView.swift */; };
 		2E8137B929BF1DE200B7CB41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8137B829BF1DE200B7CB41 /* Assets.xcassets */; };
@@ -17,11 +18,13 @@
 		2E8137C829C0B21F00B7CB41 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8137C729C0B21F00B7CB41 /* ProductsView.swift */; };
 		2E8CD3E529C3A8C200C56642 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8CD3E429C3A8C200C56642 /* ProductDetailView.swift */; };
 		2E90BC7B29E34C3900BC2A30 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E90BC7A29E34C3900BC2A30 /* ChartData.swift */; };
+		2EB6431129E996EF00F0A18C /* FavoritesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6431029E996EF00F0A18C /* FavoritesData.swift */; };
 		2EDC57F029E2BB5C00377902 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC57EF29E2BB5C00377902 /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E424E8C29E3E765007B1DD1 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		2E424E8E29E406E6007B1DD1 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		2E8137B129BF1DE100B7CB41 /* KreasBeyondMeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KreasBeyondMeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8137B429BF1DE100B7CB41 /* KreasBeyondMeatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KreasBeyondMeatApp.swift; sourceTree = "<group>"; };
 		2E8137B629BF1DE100B7CB41 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		2E8137C729C0B21F00B7CB41 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		2E8CD3E429C3A8C200C56642 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		2E90BC7A29E34C3900BC2A30 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		2EB6431029E996EF00F0A18C /* FavoritesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesData.swift; sourceTree = "<group>"; };
 		2EDC57EF29E2BB5C00377902 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,7 @@
 				2E8137C729C0B21F00B7CB41 /* ProductsView.swift */,
 				2E8CD3E429C3A8C200C56642 /* ProductDetailView.swift */,
 				2E8137B629BF1DE100B7CB41 /* HomeView.swift */,
+				2E424E8E29E406E6007B1DD1 /* FavoriteView.swift */,
 				2E424E8C29E3E765007B1DD1 /* ChartView.swift */,
 				2E8137C629BF858200B7CB41 /* Models */,
 				2E8137C229BF1E1900B7CB41 /* WelcomeView.swift */,
@@ -92,6 +97,7 @@
 				2E8137C429BF84ED00B7CB41 /* Product.swift */,
 				2EDC57EF29E2BB5C00377902 /* SampleData.swift */,
 				2E90BC7A29E34C3900BC2A30 /* ChartData.swift */,
+				2EB6431029E996EF00F0A18C /* FavoritesData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +180,8 @@
 				2E424E8D29E3E765007B1DD1 /* ChartView.swift in Sources */,
 				2E8137C829C0B21F00B7CB41 /* ProductsView.swift in Sources */,
 				2E90BC7B29E34C3900BC2A30 /* ChartData.swift in Sources */,
+				2E424E8F29E406E6007B1DD1 /* FavoriteView.swift in Sources */,
+				2EB6431129E996EF00F0A18C /* FavoritesData.swift in Sources */,
 				2E8CD3E529C3A8C200C56642 /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

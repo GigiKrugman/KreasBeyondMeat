@@ -27,7 +27,7 @@ struct ChartView: View {
                         Text(product.name)
                             .font(.headline)
                         Spacer()
-                        Text("\(chartData.items[product]!)")
+                        Text("QTY: \(chartData.items[product]!)")
                     }
                 }
                 HStack {

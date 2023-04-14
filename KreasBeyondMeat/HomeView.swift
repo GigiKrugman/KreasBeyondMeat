@@ -30,7 +30,7 @@ struct HomeView: View {
                             Label("Chart", systemImage: "bag")
                         }
                         .tag(1)
-                    Text("Favorites")
+                    FavoriteView()
                         .tabItem {
                             Label("Favorites", systemImage: "heart")
                         }
@@ -52,5 +52,6 @@ struct HomeView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView().environmentObject(ChartData())
+            .environmentObject(FavoritesData())
     }
 }

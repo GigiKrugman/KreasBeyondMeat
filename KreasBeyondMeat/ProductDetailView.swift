@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ProductDetailView: View {
     @EnvironmentObject var chartData: ChartData
-        var product: Product
+    @EnvironmentObject var favoritesData: FavoritesData
+    var product: Product
     @State private var isFavorite: Bool = false
-        @State private var number: Int = 0
+    @State private var number: Int = 0
+    
     var body: some View {
         VStack {
             Text(product.name)
@@ -44,7 +46,11 @@ struct ProductDetailView: View {
                 }
                 
                 Spacer()
-                Button(action: {isFavorite.toggle()}) {
+                Button(action: {isFavorite.toggle(); if isFavorite {
+                    favoritesData.addFavorite(product: product)
+                } else {
+                    favoritesData.removeFavorite(product: product)
+                } }) {
                     Image(systemName: isFavorite ? "heart.fill" : "heart")
                         .font(.title)
                         .foregroundColor(isFavorite ? .red : .gray)
@@ -69,5 +75,6 @@ struct ProductDetailView_Previews: PreviewProvider {
         
         ProductDetailView(product: SampleData.sampleProducts[0])
                     .environmentObject(ChartData())
+                    .environmentObject(FavoritesData())
     }
 }

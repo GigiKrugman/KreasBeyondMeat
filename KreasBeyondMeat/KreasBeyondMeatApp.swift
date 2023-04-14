@@ -15,6 +15,7 @@ struct KreasBeyondMeatApp: App {
         WindowGroup {
             WelcomeView()
                 .environmentObject(chartData)
+                .environmentObject(FavoritesData())
         }
     }
 }
